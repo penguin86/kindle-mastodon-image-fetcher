@@ -11,7 +11,7 @@ You will need a jailbroken kindle.
 
 Follow the [kidle-dash](https://github.com/pascalw/kindle-dash) instructions to install the dashboard. From now on, let's say you installed it in a folder called `my-dashboard`.
 
-(Install Python3)[https://wiki.mobileread.com/wiki/Python_on_Kindle] on your kindle
+[Install Python3](https://wiki.mobileread.com/wiki/Python_on_Kindle) on your kindle
 Check python is correctly installed running `python3 --version` (should print something like `Python 3.9.8`).
 
 > Note: Python version 3.x is required. This will not work with Python 2.x
