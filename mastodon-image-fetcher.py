@@ -81,18 +81,17 @@ cropLeft = 0
 cropTop = 0
 cropRight = kindleResolutionWidth
 cropBottom = kindleResolutionHeight
-print("Image size is {}x{}, ratio is {}, kindle ratio is {}".format(width, height, ratio, kindleRatio))
 if ratio > kindleRatio:
 	# Fit height
 	destHeight = kindleResolutionHeight
-	destWidth = width * ratio
+	destWidth = width * (destHeight / height)
 	# Calc crop
 	cropLeft = (destWidth - kindleResolutionWidth) / 2
 	cropRight = cropLeft + kindleResolutionWidth
 else:
 	# Fit width
 	destWidth = kindleResolutionWidth
-	destHeight = height * (1 / ratio)
+	destHeight = height * (destWidth / width)
 	# Calc crop
 	cropTop = (destHeight - kindleResolutionHeight) / 2
 	cropBottom = cropTop + kindleResolutionHeight
