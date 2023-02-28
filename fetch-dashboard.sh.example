@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+# This is an example configuration for https://github.com/pascalw/kindle-dash
+# Ignore this file if you are using a different dashboard
+
+# Run the fetcher and save result PNG in $1
+python3 "$(dirname "$0")/mastodon-image-fetcher.py" "$1"
